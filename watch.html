@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drishyam 3 का Bunny.net वीडियो प्लेयर।">
+  <title>Drishyam 3 — फ़िल्म देखें</title>
+  <style>
+    :root { color-scheme: dark; --bg:#100e0c; --text:#f2ece5; --muted:#aaa098; --accent:#d88a55; --line:#443329; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 Arial,sans-serif; }
+    .shell { width:min(100% - 32px,1000px); margin:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 0; border-bottom:1px solid var(--line); }
+    .brand { color:var(--text); font-size:18px; font-weight:800; letter-spacing:.12em; text-decoration:none; }
+    .steps { color:var(--muted); font-size:12px; }
+    .steps strong { color:var(--accent); }
+    main { padding:32px 0 54px; text-align:center; }
+    .back { display:block; margin:4px 0 40px; color:var(--muted); text-align:left; text-decoration:none; }
+    .eyebrow { color:var(--accent); font-size:12px; letter-spacing:.18em; }
+    h1 { margin:12px 0; font-size:clamp(36px,7vw,64px); }
+    .subtitle { color:var(--muted); }
+    .player { position:relative; width:100%; aspect-ratio:16/9; margin:34px auto 0; overflow:hidden; background:#000; border:1px solid var(--line); }
+    .player iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+    footer { padding:18px 0; border-top:1px solid var(--line); color:#8f837a; font-size:12px; }
+    @media (max-width:680px) { header { align-items:flex-start; flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="index.html">परदा</a>
+      <nav class="steps" aria-label="देखने के चरण">✓ 01 फ़िल्म　—　✓ 02 रास्ता　—　<strong>03 देखें</strong></nav>
+    </header>
+    <main>
+      <a class="back" href="continue.html">← पिछला पन्ना</a>
+      <span class="eyebrow">अब फ़िल्म का वक़्त</span>
+      <h1>Drishyam 3</h1>
+      <p class="subtitle">आराम से बैठिए। पर्दा आपका है।</p>
+      <div class="player">
+        <iframe
+          src="https://player.mediadelivery.net/embed/769074/09dcde0a-e7ae-49a9-85d5-2465b2534a35?autoplay=true&loop=false&muted=true&preload=true&responsive=true"
+          title="Drishyam 3 Bunny.net video player"
+          loading="lazy"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </main>
+    <footer>आपकी फ़िल्म, आपका पल</footer>
+  </div>
+</body>
+</html>
